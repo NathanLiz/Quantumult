@@ -1,0 +1,18 @@
+# 分流规则配置片段包含若干条分流规则；可通过资源引用的方式使用。
+# 片段文件将保存在 Quantumult X 目录下的 Profiles 子目录中。
+# 样例可参见 https://raw.githubusercontent.com/crossutility/Quantumult-X/master/filter.snippet
+ 
+ # > Spotify
+# 请注意，导入此规则将自动创建名为[Spotify]的策略组
+user-agent,Spotify*,Spotify
+host-suffix,pscdn.co,Spotify
+host-suffix,scdn.co,Spotify
+host-suffix,spotify.com,Spotify
+host-suffix,spoti.fi,Spotify
+host-suffix,spotify.com,Spotify
+host-suffix,spotifycdn.net,Spotify
+ip-cidr,35.186.224.47/32,Spotify
+# 直连修复
+host-suffix,ap.spotify.com,DIRECT
+ 
+;host, www.example.com, direct
